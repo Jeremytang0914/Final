@@ -81,15 +81,17 @@ FROM datasets.forbes_global_2010_2014
 Answer: 44410.3
 
 ## Question 7
--- How many countries on the list?
+-- How many American companies on the list in 2014?
 
-For the question7, we are looking for the number of countries list on our database. The database provides a country-column which list every single country in the forbes global 2010-2014. What we need is just using the COUNT function to find out the total number of countries. Our final answer is 2000.
+For this question, we look for the total number of american companies. We used COUNT function for the number of companies and limited the range by using where country= 'United States' and year='2014'.
 
 ```sql
-count(country)
-FROM datasets.forbes_global_2010_2014 
+SELECT
+count(company)
+from datasets.forbes_globa_2010_2014
+where country= 'United States' and year='2014'
 ```
-Answer: 2000
+
 
 ## Question 8
 --What are the top 3 sectors in the United States?
