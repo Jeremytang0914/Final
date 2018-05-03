@@ -121,7 +121,7 @@ Answer: 6564.7
 ## Question 10
 --Which continent has most companies?
 
-For this question,we want to find out which continent has most companies listed on the forbes global. The database provides all the company names and continent. We select the column "Continent" and the count the number of companies. Then ues order by DESC which will rank the highest number frist.
+For this question,we want to find out which continent has most companies listed on the forbes global. The database provides all the company names and continent. We select the column "Continent" and the count the number of companies. Then use order by DESC which will rank the highest number first.
 
 ```sql
 SELECT 
