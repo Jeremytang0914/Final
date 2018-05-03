@@ -81,15 +81,14 @@ FROM datasets.forbes_global_2010_2014
 Answer: 44410.3
 
 ## Question 7
--- How many American companies on the list in 2014?
+-- How many American companies on the list?
 
-For this question, we look for the total number of american companies. We used COUNT function for the number of companies and limited the range by using where country= 'United States' and year='2014'.
-
+For this question, we look for the total number of american companies. We used COUNT function for the number of companies and limited the range by using where country= 'United States'
 ```sql
 SELECT
 count(company)
 from datasets.forbes_globa_2010_2014
-where country= 'United States' and year='2014'
+where country= 'United States'
 ```
 
 
