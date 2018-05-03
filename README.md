@@ -94,7 +94,7 @@ Answer: 2000
 ## Question 8
 --What are the top 3 sectors in the United States?
 
-For this question, we juat want to know what sectors in the U.S. made most profits. We select all the sectors in the U.S. and order it by rank ASC. And then we got our most profitbale sectors.
+For this question, we just want to know what sectors in the U.S. made most profits. We select all the sectors in the U.S. and order it by rank ASC. And then we got our most profitbale sectors.
 
 ```sql
 SELECT 
